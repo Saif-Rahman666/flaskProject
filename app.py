@@ -2,6 +2,8 @@ from flask import Flask
 
 app = Flask(__name__)
 
+courses = [{'name': "pip",
+            'id': "0"}]
 
 @app.route('/')
 def hello_world():
