@@ -3,7 +3,10 @@ from flask import Flask
 app = Flask(__name__)
 
 courses = [{'name': "pip",
-            'id': "0"}]
+            'id': "0"},
+           {'name': "pip2",
+            'id': "1"}
+           ]
 
 @app.route('/')
 def hello_world():
