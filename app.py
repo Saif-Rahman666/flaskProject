@@ -10,7 +10,7 @@ courses = [{'name': "pip",
 
 @app.route('/')
 def hello_world():
-    return 'Hello World!'
+    return 'Hello World!!'
 
 @app.route("/name",  methods=['GET'])
 def get():
