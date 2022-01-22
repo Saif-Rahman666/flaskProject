@@ -12,8 +12,8 @@ courses = [{'name': "pip",
 def hello_world():
     return 'Hello World!!'
 
-@app.route("/name",  methods=['GET'])
+@app.route("/courses",  methods=['GET'])
 def get():
-    return jsonify({'name': name})
+    return jsonify({'courses': courses})
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
